@@ -1,5 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Drew's Guessing Game</title>
+  </head>
   <body>
+    <h1>Hi! I'm Drew Stock.</h1>
+    <h2>A little bit about me...</h2>
+    <p>In 2013, my wife, April &amp; I moved to Portland from Pittsburgh, Pennsylvania. I'm still a fan of the Pittsburgh Steelers &amp; Penguins (2016 Stanley Cup champions! Woo hoo!) and now I'm also a fan of the Portland Timbers! I've grown to love the culture, food and craft beers of Portland and the Pacific NW in general. I also love to explore our beautiful natural surroundings, and go hiking in the Columbia River Gorge and biking on all our local bike trails.</p>
+    <h3>Experience</h3>
+    <ul>
+      <li>I've worked for 10+ years in the management of meetings and tradeshows, specializing in the onsite execution of events</li>
+      <li>I recently started up a video production business, with a goal of providing affordable and professionally produced video content<br /> for the meetings &amp; events industry, local businesses and nonprofits</li>
+    </ul>
+    <h3>Education</h3>
+    <ul>
+      <li>Currently a student in Code 201 at Code Fellows</li>
+      <li>Graduate of Penn State University, with a Bachelor's degree in Film &amp; Video Production</li>
+    </ul>
+    <h3>Goals</h3>
+    <ul>
+      <li>Learn to code HTML, CSS &amp; JavaScript</li>
+      <li>Take what I learn at Code Fellows and start a new career in web development</li>
+      <li>Learn mountain climbing and summit Mt. Hood</li>
+    </ul>
+    <script type="text/javascript">
+      var userName = prompt("Welcome to Drew's Guessing Game! What's your name?","");
+      console.log("Start of the game. The user's name is: "+userName);
+      alert("It's great to meet you "+userName+"! Let's get started.");
+      var state = prompt("Did I go to college in Pennsylvania? Please answer Yes or No.","").toUpperCase();
+      console.log("First question. The user's answer was: "+state);
+      if (state === 'YES') {
+        alert("Good guess, "+userName+"! I certainly did go to college in Pennsylvania. I'm a graduate of Penn State University, which is located in State College, PA.");
+      } else {
+        alert("Sorry, "+userName+". That's incorrect. I actually did go to college in Pennsylvania.");
+      }
+      </script>
   </body>
 </html>
