@@ -26,13 +26,21 @@
     <script type="text/javascript">
       var userName = prompt("Welcome to Drew's Guessing Game! What's your name?","");
       console.log("Start of the game. The user's name is: "+userName);
-      alert("It's great to meet you "+userName+"! Let's get started.");
+      alert("It's great to meet you, "+userName+"! Let's get started.");
       var state = prompt("Did I go to college in Pennsylvania? Please answer Yes or No.","").toUpperCase();
       console.log("First question. The user's answer was: "+state);
       if (state === 'YES') {
-        alert("Good guess, "+userName+"! I certainly did go to college in Pennsylvania. I'm a graduate of Penn State University, which is located in State College, PA.");
+        alert("Good guess, "+userName+"! I certainly did go to college in Pennsylvania.\nI'm a graduate of Penn State University, which is located in State College, PA.");
       } else {
         alert("Sorry, "+userName+". That's incorrect. I actually did go to college in Pennsylvania.");
+      }
+
+      var timbers = prompt("Am I a fan of the Portland Timbers? Please answer Yes or No.","").toUpperCase();
+      console.log("Second question. The user's answer was: "+timbers);
+      if (timbers === 'YES') {
+        alert("That's right, "+userName+". You bet I am!\nKeep it up, Rose City! Don't let up, no pity!");
+      } else {
+        alert("Dang, "+userName+". That's dead wrong.\nYou didn't think that I was a Sounders fan, did you?");
       }
       </script>
   </body>
