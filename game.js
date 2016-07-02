@@ -17,7 +17,7 @@ while (state == "");
 console.log("First question. The user's answer was: "+state);
 var score = 0;
 if (state === 'YES' || state === 'Y') {
-  alert("Good guess, " + userName + "! I certainly did go to college in Pennsylvania.\nI'm a graduate of Penn State University, which is located in State College, PA.");
+  alert("Good guess, " + userName + "! I certainly did go to college in Pennsylvania.\nI'm a graduate of Penn State University, which is located in\n State College, PA.");
   score += 1;
 } else {
   alert("Sorry, " + userName + ". That's incorrect. I actually did go to college in Pennsylvania.");
@@ -52,11 +52,29 @@ if (beer === 'YES' || beer === 'Y') {
   alert("Trick question, " + userName + "! I don't just like beer, I LOVE beer! Sorry, you answered incorrectly.");
   score += 0;
 } else if (beer === 'NO' || beer === 'N') {
-  alert("You know me too well, " + userName + ".\nYou realized that I was trying to fool you, as my feelings about beer are so much stronger than simply just liking it.\nYou've earned my respect and admiration, cheers!");
+  alert("You know me too well, " + userName + ".\nYou realized that I was trying to fool you, as my feelings\nabout beer are so much stronger than simply just liking it.\nYou've earned my respect and admiration, cheers!");
   score += 1;
 } else {
   alert("Sorry, " + userName + ". That's incorrect.");
   score += 0;
 }
 console.log("User's score is: " + score);
-alert("Thanks for playing, " + userName + ". You answered " + score + " out of 3 questions correctly.")
+do {
+var lucky = prompt("Guess my lucky number. I'll give you a hint, it's between 20 and 30:","");
+if (lucky == "") {
+  alert("Come on, " + userName +". Play nice and answer the question.");
+  }
+}
+while (lucky == "");
+console.log("Fourth question. The user's answer was: " + lucky);
+if (lucky === 22) {
+  alert("Good guess, " + userName + "! My birthday is January 22nd, so 22 has always been my lucky number.");
+  score += 1;
+} else if (lucky < 22) {
+  alert("Sorry, " + userName + ". That's too low.");
+  score += 0;
+} else {
+  alert("Sorry, " + userName + ". That's too high.");
+  score += 0;
+}
+alert("Thanks for playing, " + userName + ". You answered " + score + " out of 4 questions correctly.")
