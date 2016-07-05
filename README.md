@@ -1,4 +1,5 @@
 # Drew's Guessing Game - coded by [Drew Stock] (https://github.com/DrewStock)
+==================================================
 Drew's Guessing Game is a simple guessing game. It uses basic JavaScript code to allow a user to interact with a web page and answer a series of questions about Drew Stock.
 ==================================================
 ## Version history
@@ -9,4 +10,3 @@ Drew's Guessing Game is a simple guessing game. It uses basic JavaScript code to
   * Added a fourth question
 * Version 1.2
   * Added a while loop to fourth question that prompts user to answer the question repeatedly, until they have answered     correctly
-  
