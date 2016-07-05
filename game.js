@@ -43,7 +43,7 @@ console.log("User's score is: " + score);
 do {
 var beer = prompt("Do I like beer? Please answer Yes or No.","").toUpperCase();
   if (beer == "") {
-    alert("Come on, " + userName +". Play nice and answer the question.");
+  alert("Come on, " + userName +". Play nice and answer the question.");
   }
 }
 while (beer == "");
@@ -52,7 +52,7 @@ if (beer === 'YES' || beer === 'Y') {
   alert("Trick question, " + userName + "! I don't just like beer, I LOVE beer! Sorry, you answered incorrectly.");
   score += 0;
 } else if (beer === 'NO' || beer === 'N') {
-  alert("You know me too well, " + userName + ".\nYou realized that I was trying to fool you, as my feelings\nabout beer are so much stronger than simply just liking it.\nYou've earned my respect and admiration, cheers!");
+  alert("You know me too well, " + userName + ". That's correct.\nYou realized that I was trying to fool you, as my feelings\nabout beer are so much stronger than simply just liking it.\nYou've earned my respect and admiration, cheers!");
   score += 1;
 } else {
   alert("Sorry, " + userName + ". That's incorrect.");
@@ -61,7 +61,7 @@ if (beer === 'YES' || beer === 'Y') {
 console.log("User's score is: " + score);
 do {
 var lucky = prompt("Last question! Guess what my lucky number is. I'll give you a hint, it's between 20 and 30:","");
-if (lucky == "") {
+  if (lucky == "") {
   alert("Come on, " + userName +". Play nice and answer the question.");
   }
 }
@@ -77,5 +77,16 @@ if (lucky == parseInt("22")) {
   alert("Sorry, " + userName + ". That's too high.");
   score += 0;
 }
-alert("Thanks for playing, " + userName + ". You answered " + score + " out of 4 questions correctly.");
+if (lucky != parseInt("22")) {
+  do {
+    var guessAgain = prompt("Try again, " + userName + ". You can do this!");
+    console.log("Repeat attempt of fourth question. The user's answer was: " + guessAgain);
+    if (guessAgain == parseInt("22")) {
+      alert("Nice going, " + userName + ". You guessed it!");
+      score += 1;
+    }
+  } while (guessAgain != parseInt("22"))
+}
+console.log("User's score is: " + score);
 console.log("The user answered " + score + " out of 4 questions correctly. The game has concluded.");
+alert("Thanks for playing, " + userName + ". You answered " + score + " out of 4 questions correctly.");
