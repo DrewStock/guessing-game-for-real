@@ -9,6 +9,7 @@ alert("It's great to meet you, " + userName + "! Let's get started.");
 
 var score = 0;
 
+// Function to ask yes/no questions
 function ask (question, affirmative, negative) {
   var q = prompt(question,"").toUpperCase();
   if (q == "") {
