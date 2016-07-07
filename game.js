@@ -1,3 +1,4 @@
+
 // Beginning of guessing game - Asking user for their name
 do {
 var userName = prompt("Welcome to Drew's Guessing Game! What's your name?","");
