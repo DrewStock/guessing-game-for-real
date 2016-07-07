@@ -2,32 +2,33 @@
 <html>
   <head>
     <title>Drew's Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <h1>Hi! I'm Drew Stock.</h1>
-    <h2>A little bit about me...</h2>
+    <h3>A little bit about me...</h3>
     <p>In 2013, my wife, April &amp; I moved to Portland from Pittsburgh, Pennsylvania. I'm still a fan of the Pittsburgh Steelers &amp; Penguins (2016 Stanley Cup champions! Woo hoo!) and now I'm also a fan of the Portland Timbers! I've grown to love the culture, food and craft beers of Portland and the Pacific NW in general. I also love to explore our beautiful natural surroundings, and go hiking in the Columbia River Gorge and biking on all our local bike trails.</p>
-    <h3>Experience</h3>
+    <h4>Experience</h4>
     <ul>
       <li>I've worked for 10+ years in the management of meetings and tradeshows, specializing in the onsite execution of events</li>
       <li>I recently started up a video production business, with a goal of providing affordable and professionally produced video content<br /> for the meetings &amp; events industry, local businesses and nonprofits</li>
     </ul>
-    <h3>Education</h3>
+    <h4>Education</h4>
     <ul>
       <li>Currently a student in Code 201 at Code Fellows</li>
       <li>Graduate of Penn State University, with a Bachelor's degree in Film &amp; Video Production</li>
     </ul>
-    <h3>Goals</h3>
+    <h4>Goals</h4>
     <ul>
       <li>Learn to code HTML, CSS &amp; JavaScript</li>
       <li>Take what I learn at Code Fellows and start a new career in web development</li>
-      <li>Learn mountain climbing and summit Mt. Hood</li>
     </ul>
-    <h3 id="response">Test</h3>
- <input id="button" type="button" value="Get Started" onclick="getStarted()">
- <input id="button" type="button" value="Play Game" onclick="playGame()">
-
-    <script type="text/javascript" src="game.js">
-    </script>
+    <div>
+      <h3 id="response">Would you like to play a game? Please click Get Started</h3>
+    </div>
+    <input class="button" type="button" value="Get Started" onclick="getStarted()">
+    <input class="button" type="button" value="Answer Questions" onclick="answerQuestions()">
+    <script type="text/javascript" src="game.js"></script>
   </body>
 </html>
