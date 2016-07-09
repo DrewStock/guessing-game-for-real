@@ -1,14 +1,22 @@
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  color: #242526;
+  background-color: rgba(255, 255, 235, 0.76);
+}
+
+#options {
+  margin: auto;
+  width: 50%;
 }
 
 .button {
+  display: inline-block;
   font-size: 1.25em;
   background-color: mediumaquamarine;
   border: 2px solid #a1a1a1;
   padding: 10px 10px;
-  margin: 20px;
+  margin: 20px 50px 10px 50px;
   width: 200px;
   border-radius: 25px
 }
@@ -18,10 +26,11 @@ body {
 }
 
 #response {
+  font-size: 1.5em;
   margin: auto;
   text-align: center;
   color: #fff;
   background-color: #000;
-  padding: 30px;
-  width: 800px;
+  padding: 20px;
+  width: 1000px;
 }

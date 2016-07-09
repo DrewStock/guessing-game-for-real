@@ -10,3 +10,6 @@ Drew's Guessing Game is a simple guessing game. It uses basic JavaScript code to
   * Added a fourth question
 * Version 1.2
   * Added a while loop to fourth question that prompts user to answer the question repeatedly, until they have answered     correctly
+* Version 1.3
+  * Rewrote game code to utilize functions that are modular and can be called multiple times, with unique arguments passed to them each time the functions are called
+  * Added basic styling in a linked CSS file

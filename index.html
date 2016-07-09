@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Drew's Guessing Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -12,11 +12,10 @@
     <h4>Experience</h4>
     <ul>
       <li>I've worked for 10+ years in the management of meetings and tradeshows, specializing in the onsite execution of events</li>
-      <li>I recently started up a video production business, with a goal of providing affordable and professionally produced video content<br /> for the meetings &amp; events industry, local businesses and nonprofits</li>
+      <li>I recently started up a video production business, with a goal of providing video content for the meetings &amp; events industry, local businesses and nonprofits</li>
     </ul>
     <h4>Education</h4>
     <ul>
-      <li>Currently a student in Code 201 at Code Fellows</li>
       <li>Graduate of Penn State University, with a Bachelor's degree in Film &amp; Video Production</li>
     </ul>
     <h4>Goals</h4>
@@ -27,8 +26,10 @@
     <div>
       <h3 id="response">Would you like to play a game? Please click Get Started</h3>
     </div>
-    <input class="button" type="button" value="Get Started" onclick="getStarted()">
-    <input class="button" type="button" value="Answer Questions" onclick="answerQuestions()">
+    <div id="options">
+      <input class="button" type="button" value="Get Started" onclick="getStarted()">
+      <input class="button" type="button" value="Answer Questions" onclick="answerQuestions()">
+    </div>
     <script type="text/javascript" src="game.js"></script>
   </body>
 </html>
