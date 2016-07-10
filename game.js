@@ -1,5 +1,7 @@
 var userName = "";
 var score = 0;
+var positive;
+var negative;
 
 // Function called by user input (button click) to "Get Started"
 function getStarted () {
@@ -19,12 +21,12 @@ function ask (question, correct, incorrect) {
   }
   while (q == "");
   if (q === 'YES' || q === 'Y') {
-    var positive = document.getElementById("response");
-    positive.innerHTML += "Answer: " + correct + "<br /><br />";
+    positive = document.getElementById("response");
+    positive.innerHTML += "<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />";
     score += 1;
   } else {
-      var negative = document.getElementById("response");
-      negative.innerHTML += "Answer: " + incorrect + "<br /><br />";
+      negative = document.getElementById("response");
+      negative.innerHTML += "<span style='color:red'>Answer: " + incorrect + " " + "<img src='img/32px-SMirC-thumbsdown.svg.png'</span><br /><br />";
       score += 0;
   }
 }
@@ -46,8 +48,8 @@ function guessNumber (question, number, correct, high, low) {
   }
   while (numberInput != number);
   if (parseInt(numberInput) == number) {
-    var positive = document.getElementById("response");
-    positive.innerHTML += "Answer: " + correct + "<br /><br />";
+    positive = document.getElementById("response");
+    positive.innerHTML += "<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />";
     score += 1;
   }
 }
