@@ -1,7 +1,11 @@
 var userName = "";
 var score = 0;
-var positive;
-var negative;
+var response;
+
+function get (comeback) {
+  response = document.getElementById("response");
+  response.innerHTML += comeback;
+}
 
 // Function called by user input (button click) to "Get Started"
 function getStarted () {
@@ -9,8 +13,7 @@ function getStarted () {
       userName = prompt("Welcome to Drew's Guessing Game! What's your name?","");
   }
   while (userName == "");
-  var response = document.getElementById("response");
-  response.innerHTML = "It's great to meet you, " + userName + "! Please click Answer Questions to start the game.<br /><br />";
+  get ("It's great to meet you, " + userName + "! Please click Answer Questions to start the game.<br /><br />");
 }
 
 // Function to answer yes/no questions
@@ -20,12 +23,10 @@ function ask (question, correct, incorrect) {
   }
   while (q == "");
   if (q === 'YES' || q === 'Y') {
-      positive = document.getElementById("response");
-      positive.innerHTML += "<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />";
+      get ("<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />");
       score += 1;
   } else {
-      negative = document.getElementById("response");
-      negative.innerHTML += "<span style='color:red'>Answer: " + incorrect + " " + "<img src='img/32px-SMirC-thumbsdown.svg.png'</span><br /><br />";
+      get ("<span style='color:red'>Answer: " + incorrect + " " + "<img src='img/32px-SMirC-thumbsdown.svg.png'</span><br /><br />");
       score += 0;
   }
 }
@@ -47,8 +48,7 @@ function guessNumber (question, number, correct, high, low) {
   }
   while (numberInput != number);
   if (parseInt(numberInput) == number) {
-      positive = document.getElementById("response");
-      positive.innerHTML += "<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />";
+      get ("<span style='color:green'>Answer: " + correct + " " + "<img src='img/32px-SMirC-thumbsup.svg.png'/></span><br /><br />");
       score += 1;
   }
 }
