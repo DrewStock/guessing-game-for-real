@@ -18,3 +18,7 @@ Drew's Guessing Game is a simple guessing game. It uses basic JavaScript code to
     * Text of correct answers is colored green and has a thumb's up image/emoticon
     * Text of incorrect answers is colored red and has a thumb's down image/emoticon
   * Added further styling (background colors and box shadows) to biographical sections of the page
+* Version 1.5
+  * Added a function to add responses into document
+  * Added an array to store the questions and responses for the ask()
+  * Added a for loop that call the ask() and loops through the array
